@@ -260,7 +260,7 @@ var Botkit = {
         this.deliverMessage({
             type: 'trigger',
             user: this.guid,
-            channel: this.options.use_sockets ? 'websocket' : 'webhook'
+            channel: this.options.use_sockets ? 'websocket' : 'webhook',
             script: script,
             thread: thread
         });
